@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Draculust Gaming Online Store</title>
+    <link rel="stylesheet" href="marketp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="OS.html"><img src="images\alex.jpg.gif" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="OS.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images\basket.jpg" width="30px" height="30px"></a>
+                <img src="images\menu.png" class="menu-icon"
+                onclick="menutoggle()">
+            </div>
+        </div>
+<!------- cart items details --------->
+       <div class="small-container cart-page">
+            
+          <table>
+               <tr>
+                   <th>Product</th>
+                   <th>Quantity</th>
+                   <th>Subtotal</th>
+               </tr>
+               <tr>
+                   <td>
+                       <div class="cart-info">
+                           <img src="images\USB.jpg">
+                           <div>
+                               <p>USB Charging Cable</p>
+                               <small>Price: $25.00</small>
+                               <br>
+                               <a href="">Remove</a>
+                           </div>
+                       </div>
+                   </td>
+                   <td><input type="number" value="1"></td>
+                   <td>$25.00</td>
+               </tr>
+               <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images\ff7r.png">
+                        <div>
+                            <p>Final Fantasy 7 remake: Integrade</p>
+                            <small>Price: $150.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$150.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images\Mk11.jpg">
+                        <div>
+                            <p>MK11 Premium Edition</p>
+                            <small>Price: $180.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$180.00</td>
+            </tr>
+
+          </table>
+          <div class="total-price">
+              <table>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>$355.00</td>
+                  </tr>
+                  <tr>
+                    <td>Value Added Tax 17.5%</td>
+                    <td>$62.10</td>
+                    <tr>
+                        <td>Total</td>
+                        <td>$417.10</td>
+                    </tr>
+                  </tr>
+                 
+              </table>
+
+          </div>
+
+
+
+
+
+       </div>
+
+
+
+
+
+
+ 
+  <!---------- footer -------->
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Available on Android and IOS</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store" target="blank"><img src="images\gps.png"></a>
+                    <a href="https://www.apple.com/app-store/" target="blank"><img src="images\as.png"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="images\alex.jpg.gif">
+               <p>Satisfaction is a must</p>
+           </div>
+           <div class="footer-col-3">
+               <h3>Useful Links</h3>
+               <ul>
+                   <li>Coupons</li>
+                   <li>Blog Post</li>
+                   <li>Return Policy</li>
+                   <li>Join Affiliate</li>
+               </ul>
+           </div> 
+           <div class="footer-col-3">
+               <h3>Socials</h3>
+               <ul>
+                <li><a href="https://www.instagram.com/the.rainman_" target="blank">Instagram</a></li>
+                <li><a href="https://twitter.com/hades_kazekage" target="blank">Twitter</a></li>
+                <li><a href="https://www.facebook.com/DraculustTv" target="blank">Facebook</a></li>
+                <li><a href="https://www.youtube.com/channel/UCEf1RDleYoNorUniGonINNw" target="blank">Youtube</a></li>
+               </ul>
+           </div> 
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 &#169;</p>
+    </div>
+</div>
+<!---------- js for toggle menu -------->
+<script>
+    var Menuitems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+           MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+           MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>         
+ 
+   
+
+</body>
+</html>
